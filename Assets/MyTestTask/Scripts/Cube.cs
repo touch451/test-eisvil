@@ -10,8 +10,6 @@ namespace Scripts
         [SerializeField] private CubeType cubeType;
         [SerializeField] private float moveSpeed;
 
-        //private Vector2 _moveDirection;
-
         private SpriteRenderer _sr;
         private Rigidbody2D _rb;
 
@@ -46,26 +44,6 @@ namespace Scripts
         {
             if (!_isMoving)
                 return;
-
-            //transform.Translate(_moveDirection * moveSpeed * Time.deltaTime);
-
-            //Vector3 pos = transform.position;
-            //Vector3 min = _moveBounds.min;
-            //Vector3 max = _moveBounds.max;
-
-            //if (pos.x - _cubeSize.x < min.x || pos.x + _cubeSize.x > max.x)
-            //{
-            //    _moveDirection.x *= -1;
-            //    pos.x = Mathf.Clamp(pos.x, min.x + _cubeSize.x, max.x - _cubeSize.x);
-            //    transform.position = pos;
-            //}
-
-            //if (pos.y - _cubeSize.y < min.y || pos.y + _cubeSize.y > max.y)
-            //{
-            //    _moveDirection.y *= -1;
-            //    pos.y = Mathf.Clamp(pos.y, min.y + _cubeSize.y, max.y - _cubeSize.y);
-            //    transform.position = pos;
-            //}
 
             Vector3 pos = transform.position;
             Vector3 min = _moveBounds.min;
